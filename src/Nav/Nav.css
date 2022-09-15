@@ -1,0 +1,74 @@
+nav {
+
+  margin-top: 39px;
+
+
+  z-index: 2;
+}
+
+.container {
+  width: 1178px;
+  margin: 0 auto;
+}
+.hamburger {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+
+
+}
+
+.menu .menu_item {
+
+  padding-left: 40px;
+  list-style-type: none;
+
+}
+
+a {
+  position: relative;
+  line-height: 1;
+  text-decoration: none;
+  color: #b5b5b6;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Museo Sans Cyrl-300';
+  cursor: pointer;
+}
+
+
+a:after {
+  display: block;
+  position: absolute;
+
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #3d3d3d;
+  content: "";
+  transition:  0.3s ease-out;
+}
+
+a:hover {
+  color: #5c5c5c;
+
+}
+
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+ 
+}
+a:active{
+ 
+  background-image: linear-gradient(-90.0deg, #ff3f04 0%, #ffffff 90%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition:  0.3s ease-out;
+ 
+}
